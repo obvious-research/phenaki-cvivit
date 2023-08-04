@@ -28,7 +28,7 @@ The code is heavily based [on the reproduction of Phenaki](https://github.com/lu
 
 ## * Model weight release, on Huggingface
 
-We release the model weights of our best training. The model is trained on the Webvid-10M dataset on a multi-node multi-gpu setup. 
+We release the model weights of our best training on [HuggingFace](https://huggingface.co/obvious-research/phenaki-cvivit) . The model is trained on the Webvid-10M dataset on a multi-node multi-gpu setup. 
 
 As the model CViViT is an autoencoder for videos, here are examples of videos and reconstructions created by the model:
 
@@ -42,6 +42,10 @@ With the famous blue/red pill from Matrix:
 <p align="center">
 <img src="assets_readme/matrix_example.gif" alt="matrix" width="400"/>
 </p>
+
+## * Usage for inference
+
+You can use the notebook CViViT_inference.ipynb to test the released model. First, download CVIVIT and frozen_models folders from [Huggingface](https://huggingface.co/obvious-research/phenaki-cvivit) and place them in the current repository. Then you should be able to run the notebook normally. Please note that input images to the model should be 8 FPS videos of 11 frames.
 
 ## * Next steps
 
